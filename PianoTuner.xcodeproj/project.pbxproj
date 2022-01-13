@@ -1,0 +1,874 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D9D26917E2BCC4010CCB4AE /* Pods_PianoTuner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B6DEF76349684CFA880628 /* Pods_PianoTuner.framework */; };
+		814D53052789D59200D0DF2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814D53042789D59200D0DF2E /* AppDelegate.swift */; };
+		814D53092789D59200D0DF2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814D53082789D59200D0DF2E /* ViewController.swift */; };
+		814D530C2789D59200D0DF2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 814D530A2789D59200D0DF2E /* Main.storyboard */; };
+		814D530F2789D59200D0DF2E /* PianoTuner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 814D530D2789D59200D0DF2E /* PianoTuner.xcdatamodeld */; };
+		814D53112789D59900D0DF2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 814D53102789D59900D0DF2E /* Assets.xcassets */; };
+		814D53142789D59900D0DF2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 814D53122789D59900D0DF2E /* LaunchScreen.storyboard */; };
+		814D531F2789D59900D0DF2E /* PianoTunerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814D531E2789D59900D0DF2E /* PianoTunerTests.swift */; };
+		814D53292789D59A00D0DF2E /* PianoTunerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814D53282789D59A00D0DF2E /* PianoTunerUITests.swift */; };
+		814D532B2789D59A00D0DF2E /* PianoTunerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814D532A2789D59A00D0DF2E /* PianoTunerUITestsLaunchTests.swift */; };
+		814D534F2789E31800D0DF2E /* libFrequencyHelper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 814D534A2789E0F100D0DF2E /* libFrequencyHelper.a */; };
+		814D53552789E3BC00D0DF2E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 814D53532789E38200D0DF2E /* AudioToolbox.framework */; };
+		814D53572789E3D100D0DF2E /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 814D53562789E3D100D0DF2E /* Accelerate.framework */; };
+		814D53632789E67800D0DF2E /* NotificationName+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814D53622789E67800D0DF2E /* NotificationName+Extension.swift */; };
+		814D53662789FB4000D0DF2E /* NotesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814D53652789FB4000D0DF2E /* NotesManager.swift */; };
+		814D53682789FD1700D0DF2E /* Note+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814D53672789FD1700D0DF2E /* Note+Extension.swift */; };
+		814D536A2789FD8000D0DF2E /* Octave+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814D53692789FD8000D0DF2E /* Octave+Extension.swift */; };
+		814D536C278A074C00D0DF2E /* OctavesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814D536B278A074B00D0DF2E /* OctavesViewController.swift */; };
+		814D536F278A07AD00D0DF2E /* OctavesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814D536E278A07AD00D0DF2E /* OctavesViewModel.swift */; };
+		814D5372278A07D400D0DF2E /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814D5371278A07D400D0DF2E /* NotesViewController.swift */; };
+		814D5374278A07E100D0DF2E /* NotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814D5373278A07E100D0DF2E /* NotesViewModel.swift */; };
+		814D5379278A0C3100D0DF2E /* ViewModelBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814D5378278A0C3100D0DF2E /* ViewModelBased.swift */; };
+		8155E9CB278A209F00BDDC9D /* NSManagedObjectContext+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8155E9CA278A209F00BDDC9D /* NSManagedObjectContext+Extension.swift */; };
+		8155E9CD278A24F400BDDC9D /* OctaveType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8155E9CC278A24F400BDDC9D /* OctaveType.swift */; };
+		8155E9CF278A253300BDDC9D /* NoteType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8155E9CE278A253300BDDC9D /* NoteType.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		814D531B2789D59900D0DF2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 814D52F92789D59200D0DF2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 814D53002789D59200D0DF2E;
+			remoteInfo = PianoTuner;
+		};
+		814D53252789D59900D0DF2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 814D52F92789D59200D0DF2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 814D53002789D59200D0DF2E;
+			remoteInfo = PianoTuner;
+		};
+		814D53492789E0F100D0DF2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 814D53452789E0F100D0DF2E /* FrequencyHelper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 81BCCA292789DBC500DDB86F;
+			remoteInfo = FrequencyHelper;
+		};
+		814D534B2789E10500D0DF2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 814D53452789E0F100D0DF2E /* FrequencyHelper.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 81BCCA282789DBC500DDB86F;
+			remoteInfo = FrequencyHelper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0DB09DD1F764574C1F4E0EC6 /* Pods-PianoTuner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PianoTuner.release.xcconfig"; path = "Target Support Files/Pods-PianoTuner/Pods-PianoTuner.release.xcconfig"; sourceTree = "<group>"; };
+		814D53012789D59200D0DF2E /* PianoTuner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PianoTuner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		814D53042789D59200D0DF2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		814D53082789D59200D0DF2E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		814D530B2789D59200D0DF2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		814D530E2789D59200D0DF2E /* PianoTuner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PianoTuner.xcdatamodel; sourceTree = "<group>"; };
+		814D53102789D59900D0DF2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		814D53132789D59900D0DF2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		814D53152789D59900D0DF2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		814D531A2789D59900D0DF2E /* PianoTunerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PianoTunerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		814D531E2789D59900D0DF2E /* PianoTunerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoTunerTests.swift; sourceTree = "<group>"; };
+		814D53242789D59900D0DF2E /* PianoTunerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PianoTunerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		814D53282789D59A00D0DF2E /* PianoTunerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoTunerUITests.swift; sourceTree = "<group>"; };
+		814D532A2789D59A00D0DF2E /* PianoTunerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoTunerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		814D53452789E0F100D0DF2E /* FrequencyHelper.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FrequencyHelper.xcodeproj; path = FrequencyHelper/FrequencyHelper.xcodeproj; sourceTree = "<group>"; };
+		814D534D2789E1A600D0DF2E /* PianoTuner-BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PianoTuner-BridgingHeader.h"; sourceTree = "<group>"; };
+		814D53532789E38200D0DF2E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		814D53562789E3D100D0DF2E /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		814D53582789E3F200D0DF2E /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		814D535A2789E40800D0DF2E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		814D535C2789E41500D0DF2E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		814D535E2789E42E00D0DF2E /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		814D53622789E67800D0DF2E /* NotificationName+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationName+Extension.swift"; sourceTree = "<group>"; };
+		814D53652789FB4000D0DF2E /* NotesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesManager.swift; sourceTree = "<group>"; };
+		814D53672789FD1700D0DF2E /* Note+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+Extension.swift"; sourceTree = "<group>"; };
+		814D53692789FD8000D0DF2E /* Octave+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Octave+Extension.swift"; sourceTree = "<group>"; };
+		814D536B278A074B00D0DF2E /* OctavesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctavesViewController.swift; sourceTree = "<group>"; };
+		814D536E278A07AD00D0DF2E /* OctavesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctavesViewModel.swift; sourceTree = "<group>"; };
+		814D5371278A07D400D0DF2E /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		814D5373278A07E100D0DF2E /* NotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewModel.swift; sourceTree = "<group>"; };
+		814D5378278A0C3100D0DF2E /* ViewModelBased.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelBased.swift; sourceTree = "<group>"; };
+		8155E9CA278A209F00BDDC9D /* NSManagedObjectContext+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Extension.swift"; sourceTree = "<group>"; };
+		8155E9CC278A24F400BDDC9D /* OctaveType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctaveType.swift; sourceTree = "<group>"; };
+		8155E9CE278A253300BDDC9D /* NoteType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteType.swift; sourceTree = "<group>"; };
+		83B6DEF76349684CFA880628 /* Pods_PianoTuner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PianoTuner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD6410D151FC052EA4C94375 /* Pods-PianoTuner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PianoTuner.debug.xcconfig"; path = "Target Support Files/Pods-PianoTuner/Pods-PianoTuner.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		814D52FE2789D59200D0DF2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				814D53572789E3D100D0DF2E /* Accelerate.framework in Frameworks */,
+				814D53552789E3BC00D0DF2E /* AudioToolbox.framework in Frameworks */,
+				814D534F2789E31800D0DF2E /* libFrequencyHelper.a in Frameworks */,
+				2D9D26917E2BCC4010CCB4AE /* Pods_PianoTuner.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		814D53172789D59900D0DF2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		814D53212789D59900D0DF2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		814D52F82789D59200D0DF2E = {
+			isa = PBXGroup;
+			children = (
+				814D53452789E0F100D0DF2E /* FrequencyHelper.xcodeproj */,
+				814D53032789D59200D0DF2E /* PianoTuner */,
+				814D531D2789D59900D0DF2E /* PianoTunerTests */,
+				814D53272789D59A00D0DF2E /* PianoTunerUITests */,
+				814D53022789D59200D0DF2E /* Products */,
+				814D534E2789E31800D0DF2E /* Frameworks */,
+				AEC9F70D79682274D05EFED9 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		814D53022789D59200D0DF2E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				814D53012789D59200D0DF2E /* PianoTuner.app */,
+				814D531A2789D59900D0DF2E /* PianoTunerTests.xctest */,
+				814D53242789D59900D0DF2E /* PianoTunerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		814D53032789D59200D0DF2E /* PianoTuner */ = {
+			isa = PBXGroup;
+			children = (
+				814D53042789D59200D0DF2E /* AppDelegate.swift */,
+				814D536D278A079500D0DF2E /* OctavesViewController */,
+				814D5370278A07B800D0DF2E /* NotesViewController */,
+				814D53082789D59200D0DF2E /* ViewController.swift */,
+				814D5378278A0C3100D0DF2E /* ViewModelBased.swift */,
+				814D530A2789D59200D0DF2E /* Main.storyboard */,
+				814D53102789D59900D0DF2E /* Assets.xcassets */,
+				814D53122789D59900D0DF2E /* LaunchScreen.storyboard */,
+				814D53152789D59900D0DF2E /* Info.plist */,
+				814D53612789E65600D0DF2E /* Extensions */,
+				814D53642789F93300D0DF2E /* Models */,
+				814D530D2789D59200D0DF2E /* PianoTuner.xcdatamodeld */,
+				814D534D2789E1A600D0DF2E /* PianoTuner-BridgingHeader.h */,
+			);
+			path = PianoTuner;
+			sourceTree = "<group>";
+		};
+		814D531D2789D59900D0DF2E /* PianoTunerTests */ = {
+			isa = PBXGroup;
+			children = (
+				814D531E2789D59900D0DF2E /* PianoTunerTests.swift */,
+			);
+			path = PianoTunerTests;
+			sourceTree = "<group>";
+		};
+		814D53272789D59A00D0DF2E /* PianoTunerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				814D53282789D59A00D0DF2E /* PianoTunerUITests.swift */,
+				814D532A2789D59A00D0DF2E /* PianoTunerUITestsLaunchTests.swift */,
+			);
+			path = PianoTunerUITests;
+			sourceTree = "<group>";
+		};
+		814D53462789E0F100D0DF2E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				814D534A2789E0F100D0DF2E /* libFrequencyHelper.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		814D534E2789E31800D0DF2E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				814D535E2789E42E00D0DF2E /* MediaPlayer.framework */,
+				814D535C2789E41500D0DF2E /* CoreGraphics.framework */,
+				814D535A2789E40800D0DF2E /* Foundation.framework */,
+				814D53582789E3F200D0DF2E /* OpenGLES.framework */,
+				814D53562789E3D100D0DF2E /* Accelerate.framework */,
+				814D53532789E38200D0DF2E /* AudioToolbox.framework */,
+				83B6DEF76349684CFA880628 /* Pods_PianoTuner.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		814D53612789E65600D0DF2E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				814D53622789E67800D0DF2E /* NotificationName+Extension.swift */,
+				8155E9CA278A209F00BDDC9D /* NSManagedObjectContext+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		814D53642789F93300D0DF2E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8155E9CE278A253300BDDC9D /* NoteType.swift */,
+				8155E9CC278A24F400BDDC9D /* OctaveType.swift */,
+				814D53652789FB4000D0DF2E /* NotesManager.swift */,
+				814D53672789FD1700D0DF2E /* Note+Extension.swift */,
+				814D53692789FD8000D0DF2E /* Octave+Extension.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		814D536D278A079500D0DF2E /* OctavesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				814D536B278A074B00D0DF2E /* OctavesViewController.swift */,
+				814D536E278A07AD00D0DF2E /* OctavesViewModel.swift */,
+			);
+			path = OctavesViewController;
+			sourceTree = "<group>";
+		};
+		814D5370278A07B800D0DF2E /* NotesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				814D5371278A07D400D0DF2E /* NotesViewController.swift */,
+				814D5373278A07E100D0DF2E /* NotesViewModel.swift */,
+			);
+			path = NotesViewController;
+			sourceTree = "<group>";
+		};
+		AEC9F70D79682274D05EFED9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD6410D151FC052EA4C94375 /* Pods-PianoTuner.debug.xcconfig */,
+				0DB09DD1F764574C1F4E0EC6 /* Pods-PianoTuner.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		814D53002789D59200D0DF2E /* PianoTuner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 814D532E2789D59A00D0DF2E /* Build configuration list for PBXNativeTarget "PianoTuner" */;
+			buildPhases = (
+				1D0B5D87C107B49AE6A581D7 /* [CP] Check Pods Manifest.lock */,
+				814D52FD2789D59200D0DF2E /* Sources */,
+				814D52FE2789D59200D0DF2E /* Frameworks */,
+				814D52FF2789D59200D0DF2E /* Resources */,
+				2DD6A6D5CE82B48400B422BD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				814D534C2789E10500D0DF2E /* PBXTargetDependency */,
+			);
+			name = PianoTuner;
+			productName = PianoTuner;
+			productReference = 814D53012789D59200D0DF2E /* PianoTuner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		814D53192789D59900D0DF2E /* PianoTunerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 814D53312789D59A00D0DF2E /* Build configuration list for PBXNativeTarget "PianoTunerTests" */;
+			buildPhases = (
+				814D53162789D59900D0DF2E /* Sources */,
+				814D53172789D59900D0DF2E /* Frameworks */,
+				814D53182789D59900D0DF2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				814D531C2789D59900D0DF2E /* PBXTargetDependency */,
+			);
+			name = PianoTunerTests;
+			productName = PianoTunerTests;
+			productReference = 814D531A2789D59900D0DF2E /* PianoTunerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		814D53232789D59900D0DF2E /* PianoTunerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 814D53342789D59A00D0DF2E /* Build configuration list for PBXNativeTarget "PianoTunerUITests" */;
+			buildPhases = (
+				814D53202789D59900D0DF2E /* Sources */,
+				814D53212789D59900D0DF2E /* Frameworks */,
+				814D53222789D59900D0DF2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				814D53262789D59900D0DF2E /* PBXTargetDependency */,
+			);
+			name = PianoTunerUITests;
+			productName = PianoTunerUITests;
+			productReference = 814D53242789D59900D0DF2E /* PianoTunerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		814D52F92789D59200D0DF2E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					814D53002789D59200D0DF2E = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					814D53192789D59900D0DF2E = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 814D53002789D59200D0DF2E;
+					};
+					814D53232789D59900D0DF2E = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 814D53002789D59200D0DF2E;
+					};
+				};
+			};
+			buildConfigurationList = 814D52FC2789D59200D0DF2E /* Build configuration list for PBXProject "PianoTuner" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 814D52F82789D59200D0DF2E;
+			productRefGroup = 814D53022789D59200D0DF2E /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 814D53462789E0F100D0DF2E /* Products */;
+					ProjectRef = 814D53452789E0F100D0DF2E /* FrequencyHelper.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				814D53002789D59200D0DF2E /* PianoTuner */,
+				814D53192789D59900D0DF2E /* PianoTunerTests */,
+				814D53232789D59900D0DF2E /* PianoTunerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		814D534A2789E0F100D0DF2E /* libFrequencyHelper.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFrequencyHelper.a;
+			remoteRef = 814D53492789E0F100D0DF2E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		814D52FF2789D59200D0DF2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				814D53142789D59900D0DF2E /* LaunchScreen.storyboard in Resources */,
+				814D53112789D59900D0DF2E /* Assets.xcassets in Resources */,
+				814D530C2789D59200D0DF2E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		814D53182789D59900D0DF2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		814D53222789D59900D0DF2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D0B5D87C107B49AE6A581D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PianoTuner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2DD6A6D5CE82B48400B422BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PianoTuner/Pods-PianoTuner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PianoTuner/Pods-PianoTuner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PianoTuner/Pods-PianoTuner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		814D52FD2789D59200D0DF2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8155E9CF278A253300BDDC9D /* NoteType.swift in Sources */,
+				814D53632789E67800D0DF2E /* NotificationName+Extension.swift in Sources */,
+				814D53662789FB4000D0DF2E /* NotesManager.swift in Sources */,
+				814D5374278A07E100D0DF2E /* NotesViewModel.swift in Sources */,
+				814D536F278A07AD00D0DF2E /* OctavesViewModel.swift in Sources */,
+				814D530F2789D59200D0DF2E /* PianoTuner.xcdatamodeld in Sources */,
+				8155E9CD278A24F400BDDC9D /* OctaveType.swift in Sources */,
+				814D53092789D59200D0DF2E /* ViewController.swift in Sources */,
+				814D536A2789FD8000D0DF2E /* Octave+Extension.swift in Sources */,
+				8155E9CB278A209F00BDDC9D /* NSManagedObjectContext+Extension.swift in Sources */,
+				814D53052789D59200D0DF2E /* AppDelegate.swift in Sources */,
+				814D536C278A074C00D0DF2E /* OctavesViewController.swift in Sources */,
+				814D5372278A07D400D0DF2E /* NotesViewController.swift in Sources */,
+				814D5379278A0C3100D0DF2E /* ViewModelBased.swift in Sources */,
+				814D53682789FD1700D0DF2E /* Note+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		814D53162789D59900D0DF2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				814D531F2789D59900D0DF2E /* PianoTunerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		814D53202789D59900D0DF2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				814D53292789D59A00D0DF2E /* PianoTunerUITests.swift in Sources */,
+				814D532B2789D59A00D0DF2E /* PianoTunerUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		814D531C2789D59900D0DF2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 814D53002789D59200D0DF2E /* PianoTuner */;
+			targetProxy = 814D531B2789D59900D0DF2E /* PBXContainerItemProxy */;
+		};
+		814D53262789D59900D0DF2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 814D53002789D59200D0DF2E /* PianoTuner */;
+			targetProxy = 814D53252789D59900D0DF2E /* PBXContainerItemProxy */;
+		};
+		814D534C2789E10500D0DF2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FrequencyHelper;
+			targetProxy = 814D534B2789E10500D0DF2E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		814D530A2789D59200D0DF2E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				814D530B2789D59200D0DF2E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		814D53122789D59900D0DF2E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				814D53132789D59900D0DF2E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		814D532C2789D59A00D0DF2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		814D532D2789D59A00D0DF2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		814D532F2789D59A00D0DF2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD6410D151FC052EA4C94375 /* Pods-PianoTuner.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T57CNUY5MA;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$SRCROOT/**";
+				INFOPLIST_FILE = PianoTuner/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Приложение \"PianoTuner\" использует микрофон, чтобы определить частоту звука в герцах";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-lc++";
+				PRODUCT_BUNDLE_IDENTIFIER = com.valentin.strazdin.PianoTuner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PianoTuner/PianoTuner-BridgingHeader.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		814D53302789D59A00D0DF2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DB09DD1F764574C1F4E0EC6 /* Pods-PianoTuner.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HF322G6QMZ;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$SRCROOT/**";
+				INFOPLIST_FILE = PianoTuner/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Приложение \"PianoTuner\" использует микрофон, чтобы определить частоту звука в герцах";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-lc++";
+				PRODUCT_BUNDLE_IDENTIFIER = com.valentin.strazdin.PianoTuner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "SBOL2 SIT Valentin";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PianoTuner/PianoTuner-BridgingHeader.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		814D53322789D59A00D0DF2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T57CNUY5MA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vstrazdin.PianoTunerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PianoTuner.app/PianoTuner";
+			};
+			name = Debug;
+		};
+		814D53332789D59A00D0DF2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T57CNUY5MA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vstrazdin.PianoTunerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PianoTuner.app/PianoTuner";
+			};
+			name = Release;
+		};
+		814D53352789D59A00D0DF2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T57CNUY5MA;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vstrazdin.PianoTunerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PianoTuner;
+			};
+			name = Debug;
+		};
+		814D53362789D59A00D0DF2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T57CNUY5MA;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vstrazdin.PianoTunerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PianoTuner;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		814D52FC2789D59200D0DF2E /* Build configuration list for PBXProject "PianoTuner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				814D532C2789D59A00D0DF2E /* Debug */,
+				814D532D2789D59A00D0DF2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		814D532E2789D59A00D0DF2E /* Build configuration list for PBXNativeTarget "PianoTuner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				814D532F2789D59A00D0DF2E /* Debug */,
+				814D53302789D59A00D0DF2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		814D53312789D59A00D0DF2E /* Build configuration list for PBXNativeTarget "PianoTunerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				814D53322789D59A00D0DF2E /* Debug */,
+				814D53332789D59A00D0DF2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		814D53342789D59A00D0DF2E /* Build configuration list for PBXNativeTarget "PianoTunerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				814D53352789D59A00D0DF2E /* Debug */,
+				814D53362789D59A00D0DF2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		814D530D2789D59200D0DF2E /* PianoTuner.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				814D530E2789D59200D0DF2E /* PianoTuner.xcdatamodel */,
+			);
+			currentVersion = 814D530E2789D59200D0DF2E /* PianoTuner.xcdatamodel */;
+			path = PianoTuner.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 814D52F92789D59200D0DF2E /* Project object */;
+}
