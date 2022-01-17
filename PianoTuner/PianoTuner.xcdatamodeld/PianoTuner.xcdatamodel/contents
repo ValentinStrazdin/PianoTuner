@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19206" systemVersion="20E241" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Note" representedClassName="Note" syncable="YES" codeGenerationType="class">
-        <attribute name="frequency" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
-        <attribute name="index" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="name" optional="YES" attributeType="String"/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19461" systemVersion="20G165" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Note" representedClassName="Note" syncable="YES" codeGenerationType="category">
+        <attribute name="frequency" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="index" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" attributeType="String"/>
         <attribute name="testFrequency" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
         <relationship name="octave" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Octave" inverseName="notes" inverseEntity="Octave"/>
     </entity>
-    <entity name="Octave" representedClassName="Octave" syncable="YES" codeGenerationType="class">
-        <attribute name="index" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="name" optional="YES" attributeType="String"/>
+    <entity name="Octave" representedClassName="Octave" syncable="YES" codeGenerationType="category">
+        <attribute name="index" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" attributeType="String"/>
         <relationship name="notes" optional="YES" toMany="YES" minCount="1" maxCount="12" deletionRule="Nullify" ordered="YES" destinationEntity="Note" inverseName="octave" inverseEntity="Note"/>
     </entity>
     <elements>

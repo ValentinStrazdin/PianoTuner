@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2D9D26917E2BCC4010CCB4AE /* Pods_PianoTuner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B6DEF76349684CFA880628 /* Pods_PianoTuner.framework */; };
+		34E529259EDB56E7420FD428 /* Pods_PianoTunerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD809591759238CC65D3E9D4 /* Pods_PianoTunerTests.framework */; };
 		814D53052789D59200D0DF2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814D53042789D59200D0DF2E /* AppDelegate.swift */; };
 		814D53092789D59200D0DF2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814D53082789D59200D0DF2E /* ViewController.swift */; };
 		814D530C2789D59200D0DF2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 814D530A2789D59200D0DF2E /* Main.storyboard */; };
@@ -22,8 +23,6 @@
 		814D53572789E3D100D0DF2E /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 814D53562789E3D100D0DF2E /* Accelerate.framework */; };
 		814D53632789E67800D0DF2E /* NotificationName+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814D53622789E67800D0DF2E /* NotificationName+Extension.swift */; };
 		814D53662789FB4000D0DF2E /* NotesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814D53652789FB4000D0DF2E /* NotesManager.swift */; };
-		814D53682789FD1700D0DF2E /* Note+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814D53672789FD1700D0DF2E /* Note+Extension.swift */; };
-		814D536A2789FD8000D0DF2E /* Octave+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814D53692789FD8000D0DF2E /* Octave+Extension.swift */; };
 		814D536C278A074C00D0DF2E /* OctavesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814D536B278A074B00D0DF2E /* OctavesViewController.swift */; };
 		814D536F278A07AD00D0DF2E /* OctavesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814D536E278A07AD00D0DF2E /* OctavesViewModel.swift */; };
 		814D5372278A07D400D0DF2E /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814D5371278A07D400D0DF2E /* NotesViewController.swift */; };
@@ -32,6 +31,9 @@
 		8155E9CB278A209F00BDDC9D /* NSManagedObjectContext+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8155E9CA278A209F00BDDC9D /* NSManagedObjectContext+Extension.swift */; };
 		8155E9CD278A24F400BDDC9D /* OctaveType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8155E9CC278A24F400BDDC9D /* OctaveType.swift */; };
 		8155E9CF278A253300BDDC9D /* NoteType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8155E9CE278A253300BDDC9D /* NoteType.swift */; };
+		81D96ABC2795CBF100A34AA3 /* Octave+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D96ABA2795CBF100A34AA3 /* Octave+CoreDataClass.swift */; };
+		81D96ABD2795CBF100A34AA3 /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D96ABB2795CBF100A34AA3 /* Note+CoreDataClass.swift */; };
+		81D96AC02795CDAF00A34AA3 /* Float+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D96ABF2795CDAF00A34AA3 /* Float+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0810A892438A6E3F0D13CA0F /* Pods-PianoTunerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PianoTunerTests.debug.xcconfig"; path = "Target Support Files/Pods-PianoTunerTests/Pods-PianoTunerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		0DB09DD1F764574C1F4E0EC6 /* Pods-PianoTuner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PianoTuner.release.xcconfig"; path = "Target Support Files/Pods-PianoTuner/Pods-PianoTuner.release.xcconfig"; sourceTree = "<group>"; };
 		814D53012789D59200D0DF2E /* PianoTuner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PianoTuner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		814D53042789D59200D0DF2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,8 +93,6 @@
 		814D535E2789E42E00D0DF2E /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		814D53622789E67800D0DF2E /* NotificationName+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationName+Extension.swift"; sourceTree = "<group>"; };
 		814D53652789FB4000D0DF2E /* NotesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesManager.swift; sourceTree = "<group>"; };
-		814D53672789FD1700D0DF2E /* Note+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+Extension.swift"; sourceTree = "<group>"; };
-		814D53692789FD8000D0DF2E /* Octave+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Octave+Extension.swift"; sourceTree = "<group>"; };
 		814D536B278A074B00D0DF2E /* OctavesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctavesViewController.swift; sourceTree = "<group>"; };
 		814D536E278A07AD00D0DF2E /* OctavesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctavesViewModel.swift; sourceTree = "<group>"; };
 		814D5371278A07D400D0DF2E /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
@@ -100,8 +101,12 @@
 		8155E9CA278A209F00BDDC9D /* NSManagedObjectContext+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Extension.swift"; sourceTree = "<group>"; };
 		8155E9CC278A24F400BDDC9D /* OctaveType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctaveType.swift; sourceTree = "<group>"; };
 		8155E9CE278A253300BDDC9D /* NoteType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteType.swift; sourceTree = "<group>"; };
+		81D96ABA2795CBF100A34AA3 /* Octave+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Octave+CoreDataClass.swift"; sourceTree = "<group>"; };
+		81D96ABB2795CBF100A34AA3 /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataClass.swift"; sourceTree = "<group>"; };
+		81D96ABF2795CDAF00A34AA3 /* Float+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+Extension.swift"; sourceTree = "<group>"; };
 		83B6DEF76349684CFA880628 /* Pods_PianoTuner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PianoTuner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD6410D151FC052EA4C94375 /* Pods-PianoTuner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PianoTuner.debug.xcconfig"; path = "Target Support Files/Pods-PianoTuner/Pods-PianoTuner.debug.xcconfig"; sourceTree = "<group>"; };
+		CD809591759238CC65D3E9D4 /* Pods_PianoTunerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PianoTunerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34E529259EDB56E7420FD428 /* Pods_PianoTunerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +217,7 @@
 				814D53562789E3D100D0DF2E /* Accelerate.framework */,
 				814D53532789E38200D0DF2E /* AudioToolbox.framework */,
 				83B6DEF76349684CFA880628 /* Pods_PianoTuner.framework */,
+				CD809591759238CC65D3E9D4 /* Pods_PianoTunerTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -220,6 +227,7 @@
 			children = (
 				814D53622789E67800D0DF2E /* NotificationName+Extension.swift */,
 				8155E9CA278A209F00BDDC9D /* NSManagedObjectContext+Extension.swift */,
+				81D96ABF2795CDAF00A34AA3 /* Float+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -227,11 +235,11 @@
 		814D53642789F93300D0DF2E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				81D96ABB2795CBF100A34AA3 /* Note+CoreDataClass.swift */,
+				81D96ABA2795CBF100A34AA3 /* Octave+CoreDataClass.swift */,
 				8155E9CE278A253300BDDC9D /* NoteType.swift */,
 				8155E9CC278A24F400BDDC9D /* OctaveType.swift */,
 				814D53652789FB4000D0DF2E /* NotesManager.swift */,
-				814D53672789FD1700D0DF2E /* Note+Extension.swift */,
-				814D53692789FD8000D0DF2E /* Octave+Extension.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -259,6 +267,7 @@
 			children = (
 				BD6410D151FC052EA4C94375 /* Pods-PianoTuner.debug.xcconfig */,
 				0DB09DD1F764574C1F4E0EC6 /* Pods-PianoTuner.release.xcconfig */,
+				0810A892438A6E3F0D13CA0F /* Pods-PianoTunerTests.debug.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -290,6 +299,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 814D53312789D59A00D0DF2E /* Build configuration list for PBXNativeTarget "PianoTunerTests" */;
 			buildPhases = (
+				281EEA41F705C827E1658131 /* [CP] Check Pods Manifest.lock */,
 				814D53162789D59900D0DF2E /* Sources */,
 				814D53172789D59900D0DF2E /* Frameworks */,
 				814D53182789D59900D0DF2E /* Resources */,
@@ -431,6 +441,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		281EEA41F705C827E1658131 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PianoTunerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2DD6A6D5CE82B48400B422BD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -462,14 +494,15 @@
 				814D536F278A07AD00D0DF2E /* OctavesViewModel.swift in Sources */,
 				814D530F2789D59200D0DF2E /* PianoTuner.xcdatamodeld in Sources */,
 				8155E9CD278A24F400BDDC9D /* OctaveType.swift in Sources */,
+				81D96ABC2795CBF100A34AA3 /* Octave+CoreDataClass.swift in Sources */,
 				814D53092789D59200D0DF2E /* ViewController.swift in Sources */,
-				814D536A2789FD8000D0DF2E /* Octave+Extension.swift in Sources */,
 				8155E9CB278A209F00BDDC9D /* NSManagedObjectContext+Extension.swift in Sources */,
 				814D53052789D59200D0DF2E /* AppDelegate.swift in Sources */,
 				814D536C278A074C00D0DF2E /* OctavesViewController.swift in Sources */,
+				81D96ABD2795CBF100A34AA3 /* Note+CoreDataClass.swift in Sources */,
 				814D5372278A07D400D0DF2E /* NotesViewController.swift in Sources */,
+				81D96AC02795CDAF00A34AA3 /* Float+Extension.swift in Sources */,
 				814D5379278A0C3100D0DF2E /* ViewModelBased.swift in Sources */,
-				814D53682789FD1700D0DF2E /* Note+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -630,6 +663,7 @@
 		};
 		814D53322789D59A00D0DF2E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0810A892438A6E3F0D13CA0F /* Pods-PianoTunerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -637,6 +671,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T57CNUY5MA;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Reusable/Reusable.framework/Headers\"",
+					"$SRCROOT/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

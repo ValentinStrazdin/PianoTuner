@@ -7,8 +7,8 @@
 
 import Foundation
 
-enum NoteType: Int32 {
-    case c = 0
+enum NoteType: Int64 {
+    case c = 1
     case cis
     case d
     case dis
@@ -57,5 +57,14 @@ enum NoteType: Int32 {
         case .h:
             return "Си"
         }
+    }
+
+    var nameWithSpaces: String {
+        let spacesCount = NoteType.maxNameLength - name.count + 1
+        return "\(name)\(String(repeating: " ", count: spacesCount))"
+    }
+
+    static var maxNameLength: Int {
+        NoteType.gis.name.count
     }
 }

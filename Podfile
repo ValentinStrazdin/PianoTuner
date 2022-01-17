@@ -13,6 +13,11 @@ end
 
 target 'PianoTuner' do
     	# Pods for PianoTuner
-        project 'PianoTuner.xcodeproj'
+      project 'PianoTuner.xcodeproj'
     	all_pods
+
+    target 'PianoTunerTests' do
+      inherit! :search_paths
+        # Pods for testing
+    end
 end

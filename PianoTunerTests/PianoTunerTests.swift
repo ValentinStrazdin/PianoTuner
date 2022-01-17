@@ -10,24 +10,26 @@ import XCTest
 
 class PianoTunerTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testFrequencies() {
+        let notesManager = NotesManager()
+        printAllNotes(notesManager: notesManager)
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    func testFrequenciesChanged() {
+        let notesManager = NotesManager(mainFrequency: 443.0)
+        printAllNotes(notesManager: notesManager)
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    private func printAllNotes(notesManager: NotesManager) {
+        print("\nНастройка фортепиано для основной частоты: \(notesManager.mainFrequency.defaultString)")
+        for octaveType in OctaveType.allOctaveTypes {
+            print("\n\(octaveType.rawValue)) \(octaveType.name)")
+            for noteType in octaveType.allNotes {
+                let frequency = notesManager.getFrequency(octaveType: octaveType, noteType: noteType)
+                print("     \(noteType.nameWithSpaces) (\(noteType.rawValue)):\t \(frequency.defaultString)")
+            }
         }
+        print("\n")
     }
 
 }

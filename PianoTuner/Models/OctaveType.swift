@@ -7,8 +7,8 @@
 
 import Foundation
 
-enum OctaveType: Int32 {
-    case subContrOctave = 0
+enum OctaveType: Int64 {
+    case subContrOctave = 1
     case contrOctave
     case bigOctave
     case lowOctave
